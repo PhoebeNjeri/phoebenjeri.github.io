@@ -10,6 +10,7 @@ A well polished portfolio-quality state
 project description and link
 #### Link
 https://github.com/PhoebeNjeri/phoebenjeri.github.io.git
+file:///home/phoebe/Documents/moringa-school-projects/phoebenjeri.github.io/index.html
 ##### License information
 
 
