@@ -1,58 +1,105 @@
-
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
-}
-header {
-    background-image: url(Images/1580377429293.jpg);
-    height: 1100px;
-    background-size: cover;
-    background-position: center;
-}
-.main-nav
-{
-    float: left;
-    margin-top: 30px;
-}
-.main-nav li a{
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
 }
 
-.main-nav li.active a
-{
-
-    border:1px solid white;
-}
-.main-nav li a:hover
-{
-    border:1px solid yellow;
-}
-.hero
-{
-    position: absolute;
-    width: 1200px;
-    margin-left: 0px;
-    margin-top: 0px;
-    z-index: -7;file:///home/phoebe/Documents/moringa-school-projects/phoebenjeri.github.io/about.html/project.html/contacts.html 
+body {
+	background: #f2f0eb url(images/bg.png);
+	font: 16px Helvetica, Arial, Sans-Serif; color: #636363; line-height: 24px;
 }
 
-h1
-{
-    color: burlywood;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 275px;
+
+#container {
+	width: 960px; margin: 0 auto;
 }
-p
-{
-    color:gray;
-    text-align: center;>
-}
+
+            #header {
+                height: 244px; padding: 52px 0 0 57px;
+                margin: 20px;
+                border: 15px solid green;
+                background: url(images/home-header.jpg);
+            }
+            
+                #header h1 {
+                    font: 38px Georgia, Serif; color: black; letter-spacing: 2px; margin: 0 0 20px 0;
+                    text-shadow: 0px 3px 3px #494949;
+                }
+                #header h2 {
+                    width: 510px; font: 30px Georgia, Serif; color: black; letter-spacing: 2px; margin: 0 0 20px 0;
+                    text-shadow: 0px 3px 3px #494949;
+                }
+                #header p.btn a {
+                    display: block; width: 225px; height: 50px; overflow: hidden;
+                    background: url(images/home-header-btn.jpg); text-indent: -9999px;
+                }
+                content {
+                    background: url(images/content-bg.png) repeat-y;
+                    padding: 57px 69px 50px 69px; overflow: hidden;
+                }
+                    #content h2 {
+                        font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                    }
+                
+                    #content h3 {
+                        font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                    }
+                    
+                    #content p {
+                        margin: 0 0 30px 0;
+                    }
+                    
+                    #content a {
+                        color: #a12121; text-decoration: none;
+                    }
+                        #content a:hover {
+                            color: #671111;
+                        }
+                    
+                #content .portfolio-item {
+                    width: 182px; padding: 4px; background: #eee; text-align: center;
+                    float: left; margin: 0 7px 14px 7px;
+                }
+                    #content .portfolio-item p.btn {
+                        margin: 0;
+                    }
+                    #content .portfolio-item p.btn a {
+                        display: block; width: 183px; height: 29px; padding: 7px 0 0 0;
+                        background: url(images/see-more-bg.png);
+                        font-weight: bold; text-align: center; text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    content {
+                        background: url(images/content-bg.png) repeat-y;
+                        padding: 57px 69px 50px 69px; overflow: hidden;
+                    }
+                        #content h2 {
+                            font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                        }
+                    
+                        #content h3 {
+                            font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+                        }
+                        
+                        #content p {
+                            margin: 0 0 30px 0;
+                        }
+                        
+                        #content a {
+                            color: #a12121; text-decoration: none;
+                        }
+                            #content a:hover {
+                                color: #671111;
+                            }
+                        
+                    #content .portfolio-item {
+                        width: 182px; padding: 4px; background: #eee; text-align: center;
+                        float: left; margin: 0 7px 14px 7px;
+                    }
+                        #content .portfolio-item p.btn {
+                            margin: 0;
+                        }
+                        #content .portfolio-item p.btn a {
+                            display: block; width: 183px; height: 29px; padding: 7px 0 0 0;
+                            background: url(images/see-more-bg.png);
+                            font-weight: bold; text-align: center; text-transform: uppercase;
+                            text-decoration: none;
+                        }
