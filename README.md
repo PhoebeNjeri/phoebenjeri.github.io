@@ -9,7 +9,7 @@ A well polished portfolio-quality state
 20+ commits made regularly
 project description and link
 #### Link
-file:///home/phoebe/Documents/moringa-school-projects/phoebenjeri.github.io/index.html
+https://github.com/PhoebeNjeri/phoebenjeri.github.io.git
 ##### License information
 
 
