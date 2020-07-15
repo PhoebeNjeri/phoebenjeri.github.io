@@ -1,15 +1,16 @@
 <!--phoebenjeri.github.io -->
 # Author name
-*Phoebe Njeri
+Phoebe Njeri
 ## Project Description
-*This project has been created to be the place i can deploy my website portfolio
+This project has been created to be the place i can deploy my website portfolio
 ### Project setup instructions
-*A well documented README
-*A well polished portfolio-quality state
-*20+ commits made regularly
-*project description and link
+A well documented README
+A well polished portfolio-quality state
+20+ commits made regularly
+project description and link
 #### Link
-*https://github.com/PhoebeNjeri/phoebenjeri.github.io.git
+https://github.com/PhoebeNjeri/phoebenjeri.github.io.git
+file:///home/phoebe/Documents/moringa-school-projects/phoebenjeri.github.io/index.html
 ##### License information
 
 
