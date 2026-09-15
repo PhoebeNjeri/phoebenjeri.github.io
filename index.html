@@ -3,223 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoebe Portfolio</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Phoebe Gichuhi — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom navbar-light menu sticky-top">
-        <div class="container">
-            <a class="navbar-brand text-light" href="#">
-                <!-- Logo -->
-                Phoebe<span class="logo-title">Gichuhi</span>
-            </a>
-            <button class="navbar-toggler icon-color" type="button" data-toggle="collapse" data-target="#targeted" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <div class="bg-aurora" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">phoebe<span>.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-    
-            <div class="collapse navbar-collapse custom-nav" id="targeted">
-                <ul class="navbar-nav ml-auto navbar-nav-custom">
-                    <li class="nav-item active pr-4 nav-item-custom">
-                        <a class="nav-link nav-link-custom" href="#">Home</a>
-                    </li>
-                    <li class="nav-item pr-4 nav-item-custom">
-                        <a class="nav-link nav-link-custom" href="#about">About</a>
-                    </li>
-                    <li class="nav-item pr-4 nav-item-custom">
-                        <a class="nav-link nav-link-custom" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item pr-4 nav-item-custom">
-                        <a class="nav-link nav-link-custom" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item pr-4 nav-item-custom">
-                        <a class="nav-link nav-link-custom" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    <!-- End of navbar -->
 
-    <div class="containerfluid" id="banner">
-        <h2>Phoebe<span>Gichuhi</span></h2>
-        <p>Software and Web Developer</p>
-    </div>
-    <!-- End Section Banner -->
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">👋 Hey there, I'm</p>
+            <h1 class="hero-name reveal">Phoebe <span class="gradient-text">Gichuhi</span></h1>
+            <p class="hero-title reveal">
+                <span class="typed" id="typed"></span><span class="typed-cursor">|</span>
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-primary">View My Work ↘</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Live Projects</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <span></span>
+        </a>
+    </header>
 
-        <!-- About us -->
-        <div class="container pt-4 pb-2" id="about">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="about-img">
-                        <img class="w-100 img-thumbnail" src="images/official.jpg" alt="Phoebe">
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="section-label">01 · About Me</p>
+                <h2 class="section-title">A designer & developer<br>who loves <span class="gradient-text">building things</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="images/official.jpg" alt="Phoebe Gichuhi">
+                        <div class="image-badge">📍 Nairobi, Kenya</div>
                     </div>
                 </div>
-                <div class="col-md-8 pl-3">
-                    <div class="about-text text-light">
-                        <h2 class="about-heading">Personal Profile</h2>
-                        <p>Hi! My name is Phoebe Gichuhi. I am a Web Developer and Web Designer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>
-                                        <span class="nairobi"><label>City:</label> Nairobi</span>
-                                    </li>
-                                    <li>
-                                        <span class="nairobi"><label>Study:</label> Moringa School</span>
-                                    </li>
-                                    <li>
-                                        <span><label>Mail:</label> <a class="about-link text-light" href="mailto:phoebegichuhi4@gmail.com">phoebegichuhi4&#64;gmail.com</a></span>
-                                    </li>
-                                    <li>
-                                        <span><label>Phone:</label> <a class="about-link text-light" href="#"> ​+​25470782***/ +2547869*** </a></span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h2 class="skills-heading">Hobbies</h2>
-                                <ul>
-                                    <li>Dancing</li>
-                                    <li>Passionate in coding</li>
-                                    <li>Travelling</li>
-                                </ul>
-                            </div>
+                <div class="about-content reveal">
+                    <p class="about-text">
+                        Hi! My name is <strong>Phoebe Gichuhi</strong>. I am a Web Developer and Web Designer, and I'm very passionate and dedicated to my work. I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <span class="detail-label">City</span>
+                            <span class="detail-value">Nairobi</span>
                         </div>
-                        <!-- Contact button -->
-                        <div class="about-button">
-                            <a href="#"><button class="btn btn-warning  ml-3">Contact Me</button></a>
+                        <div class="detail">
+                            <span class="detail-label">Studies</span>
+                            <span class="detail-value">Moringa School</span>
                         </div>
+                        <div class="detail">
+                            <span class="detail-label">Email</span>
+                            <a href="mailto:phoebegichuhi4@gmail.com" class="detail-value">phoebegichuhi4@gmail.com</a>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Hobbies</span>
+                            <span class="detail-value">Dancing · Coding · Travelling</span>
+                        </div>
+                    </div>
+                    <div class="about-tags">
+                        <span class="tag">🧩 Problem Solver</span>
+                        <span class="tag">🎨 Creative</span>
+                        <span class="tag">🚀 Passionate</span>
                     </div>
                 </div>
             </div>
         </div>
-    <!-- End About Us -->
+    </section>
 
     <!-- Skills -->
-    <div class="container-fluid" id="skills">
-        <div class="container pt-3">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <div class="skills-title">
-                        <h2 class="skills-heading">Skills</h2>
-                        <p class="text-light">Main skills and abilities that i can do</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image" src="images/html.png" alt="">
-                    <h4 class="pt-3">HTML5</h4>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image-1" src="images/css.png" alt="">
-                    <h4 class="pt-3">CSS 3</h4>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image" src="images/js.png" alt="">
-                    <h4 class="pt-3">JavaScript</h4>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image" src="images/jquery.png" alt="">
-                    <h4>jQuery</h4>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image" src="images/bootstrap-stack.png" alt="">
-                    <h4 class="pt-4">Bootstrap</h4>
-                </div>
-                <div class="col-md-4">
-                    <img class="skill-image" src="images/git.png" alt="">
-                    <h4>Git</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  End Skills -->
-
-    <section id="project">
+    <section class="section section-alt" id="skills">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="project-title pt-3">My Project</h2>
-                    <p class="text-white">Here are some of my works</p>
-                </div>
-               
-                <!-- End of first project -->
-                
-                <!-- End of Second project -->
-               
-
-                <!-- End of third project -->
-                <div class="col-md-4 pt-4">
-                    <div class="card" id="hover-project-img">
-                        <img class="project-img w-100" src="images/project-5.png" alt="Music">
-                        <div class="card-body">
-                            <h4 class="text-center">Pizza Inn Website</h4>
-                            <p class="text-muted">
-                                Web application for Pizza inn that enable customers to order pizza online and deliver to their homes or allows them to pick at the main office.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://phoebenjeri.github.io/PHOEBE.PIZZA.PROJECT/" target="_blank"><button class="btn btn-custom">View Project</button></a>
-                            <a href="https://github.com/PhoebeNjeri/PHOEBE.PIZZA.PROJECT" target="__blank"><button class="btn btn-custom">View Github Repo</button></a>
-                        </div>
+            <div class="section-head center reveal">
+                <p class="section-label">02 · Skills</p>
+                <h2 class="section-title">My <span class="gradient-text">toolbox</span></h2>
+            </div>
+            <div class="skills-bars reveal">
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-percent" data-target="95">0%</span>
                     </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
                 </div>
-                <!-- End of Fouth project -->
-                <div class="col-md-4 pt-4">
-                    <div class="card" id="hover-project-img">
-                        <img class="project-img w-100" src="images/project-6.png" alt="Music">
-                        <div class="card-body">
-                            <h4 class="text-center">Delani Studio</h4>
-                            <p class="text-muted">
-                                Web application for delani studio that shows informatio about delani and the project they have been doing and also it allows users to send message about delani studio website.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://phoebenjeri.github.io/njeri254.github.io/" target="_blank"><button class="btn btn-custom">View Project</button></a>
-                            <a href="https://github.com/PhoebeNjeri/njeri254.github.io" target="__blank"><button class="btn btn-custom">View Github Repo</button></a>
-                        </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-percent" data-target="90">0%</span>
                     </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
                 </div>
-                <!-- End of Fifth project -->
-                <div class="col-md-4 pt-4">
-                    <div class="card" id="hover-project-img">
-                        <img class="project-img w-100" src="images/project-7.png" alt="Music">
-                        <div class="card-body">
-                            <h4 class="text-center">Akan Names</h4>
-                            <p class="text-muted">
-                                Application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name is displayed 
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://phoebenjeri.github.io/phoebe254.github.io/" target="_blank"><button class="btn btn-custom">View Project</button></a>
-                            <a href="https://github.com/PhoebeNjeri/phoebe254.github.io" target="__blank"><button class="btn btn-custom">View Github Repo</button></a>
-                        </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent" data-target="80">0%</span>
                     </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
                 </div>
-                <!-- End of sixth project -->
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">jQuery</span>
+                        <span class="skill-percent" data-target="75">0%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">Bootstrap</span>
+                        <span class="skill-percent" data-target="85">0%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-bar-head">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-percent" data-target="80">0%</span>
+                    </div>
+                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- End Project -->
 
-    <section id="contact">
-        <h2 class="pt-4">Contact</h2>
-        <p>Lets work together</p>
-        <p>Email: phoebegichuhi4@gmail.com</p>
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-head center reveal">
+                <p class="section-label">03 · Portfolio</p>
+                <h2 class="section-title">Featured <span class="gradient-text">work</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-cover">
+                        <img src="images/project-5.png" alt="Pizza Inn Website">
+                        <div class="project-overlay">
+                            <a href="https://phoebenjeri.github.io/PHOEBE.PIZZA.PROJECT/" target="_blank" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <h3>Pizza Inn Website</h3>
+                            <span class="project-number">01</span>
+                        </div>
+                        <p>Online ordering app for Pizza Inn — home delivery or pickup from the main office.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <a href="https://github.com/PhoebeNjeri/PHOEBE.PIZZA.PROJECT" target="_blank" class="project-github">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-cover">
+                        <img src="images/project-6.png" alt="Delani Studio">
+                        <div class="project-overlay">
+                            <a href="https://phoebenjeri.github.io/njeri254.github.io/" target="_blank" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <h3>Delani Studio</h3>
+                            <span class="project-number">02</span>
+                        </div>
+                        <p>Studio showcase site with project gallery and a working contact/message form.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">jQuery</span>
+                        </div>
+                        <a href="https://github.com/PhoebeNjeri/njeri254.github.io" target="_blank" class="project-github">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-cover">
+                        <img src="images/project-7.png" alt="Akan Names">
+                        <div class="project-overlay">
+                            <a href="https://phoebenjeri.github.io/phoebe254.github.io/" target="_blank" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-top">
+                            <h3>Akan Names</h3>
+                            <span class="project-number">03</span>
+                        </div>
+                        <p>Birthday calculator that reveals your Ghanaian Akan name based on the day and gender.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                        <a href="https://github.com/PhoebeNjeri/phoebe254.github.io" target="_blank" class="project-github">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- End Contact -->
 
-    <footer>
-        Copyright &copy; 2023 |  Phoebe Gichuhi
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-head center reveal">
+                <p class="section-label">04 · Contact</p>
+                <h2 class="section-title">Let's build something <span class="gradient-text">awesome</span></h2>
+                <p class="contact-sub">Have a project in mind? I'd love to hear about it.</p>
+            </div>
+            <div class="contact-card reveal">
+                <div class="contact-row">
+                    <span class="contact-icon">✉️</span>
+                    <a href="mailto:phoebegichuhi4@gmail.com" class="contact-email">phoebegichuhi4@gmail.com</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-icon">🐙</span>
+                    <a href="https://github.com/PhoebeNjeri" target="_blank" class="contact-link">github.com/PhoebeNjeri</a>
+                </div>
+                <a href="mailto:phoebegichuhi4@gmail.com" class="btn btn-primary btn-lg">Start a Conversation →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 Phoebe Gichuhi — Built with ♥ and lots of coffee</p>
+        </div>
     </footer>
 
-    <!-- JavaScript && jQuerry Code -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
